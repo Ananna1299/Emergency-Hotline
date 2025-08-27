@@ -18,6 +18,8 @@
    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="">
+
+    <!-- navbar section -->
     <nav class="pl-14 pr-14 pt-3 pb-3 flex justify-between bg-[#b5b5b540] hind-madhurai">
         <div class="flex items-center gap-2">
             <figure class="w-12">
@@ -31,7 +33,7 @@
 
         <div class="sm:flex flex-col gap-6 md: flex-row">
             <p class="flex gap-2 bg-[#41ff6b1a] w-24 rounded-[50px] justify-center items-center mb-2 md:mb-0">
-                <span class="font-bold">0</span>
+                <span class="font-bold" id="heart-count">0</span>
                <span>
                 <img src="./assets/heart.png" alt="" class="w-6">
                </span> 
@@ -68,7 +70,7 @@
 
             
         <div class="grid grid-cols-1 md:grid-cols-3 gap-3 hind-madhurai md:w-9/12
-        justify-items-center md:justify-items-start"> 
+        justify-items-center md:justify-items-start" id="cart-container"> 
         <!-- cart-1 -->   
         <div class="card bg-base-100 shadow-sm w-80">
             <div class="flex justify-between items-center p-4">
@@ -78,7 +80,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -105,7 +107,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -132,7 +134,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -159,7 +161,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -185,7 +187,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -211,7 +213,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -237,7 +239,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -263,7 +265,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -289,7 +291,7 @@
                 alt="" class="w-10"/>
                 
             </figure>
-            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-heart heart-icon"></i>
             </div>
             
             <div class="card-body text-left">
@@ -351,6 +353,11 @@
 
         
      </div> 
+    
 
+
+
+
+     <script src="./cart.js"></script>
 </body>
 </html>
