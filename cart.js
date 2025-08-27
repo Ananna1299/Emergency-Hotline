@@ -56,7 +56,7 @@ document.getElementById("cart-container").addEventListener("click",function(even
                 </div>
         `
 
-        const callHistory=document.getElementById("call-history");
+        const callHistory=document.getElementById("call-history-container");
 
         callHistory.append(divc)
 
@@ -71,6 +71,38 @@ document.getElementById("cart-container").addEventListener("click",function(even
 
     
 })
+
+
+//clear button 
+
+document.getElementById("btn-clear").addEventListener("click",function(){
+    const clearContainer=document.getElementById("call-history-container");
+    clearContainer.innerHTML="";
+    
+
+})
+
+//copy button
+document.getElementById("cart-container").addEventListener("click",function(event){
+    
+    //copy click function
+    if(event.target.className.includes("copy-btn")){
+        const cBtn=event.target;
+        
+
+     let helplineNum=cBtn.parentNode.parentNode.children[2].innerText;
+     //console.log(helplineNum);
+
+           navigator.clipboard.writeText( helplineNum).then(() => {
+        alert(" Number is Copied " + helplineNum);
+      });
+
+    const initialCopy=document.getElementById("copy-count");
+    
+        const currentCopy=Number(initialCopy.innerText)+1;
+        initialCopy.innerText=currentCopy;
+    } 
+    })
 
 
 
